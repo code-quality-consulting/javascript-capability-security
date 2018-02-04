@@ -1,0 +1,9 @@
+Capability Security and Pure Functional Programming in JSLinted Javascript
+
+Pure functional programming makes code easier to reason about, yet as last year's LambdaConf Keynote On State made clear: we are still struggling with mutable state. At the same time, we must also build systems that cannot be tricked into giving up their secrets or doing things that are against the will of their users.
+
+Douglas Crockford has brought his Facet Pattern into Javascript to solve the capability security problem, but this also comes with interesting challenges for the serious functional programmer since the Facet Pattern depends on mutable state within a closure. The professional Javascript Programmer cannot be caught without solutions to these problems even as a clear way has not yet been popularly established.
+
+For our workshop, since we are using Javascript, the Redux Flux architecture is where we shall begin. We shall proceed to contrast it with the classic Facet Pattern. Finally, we shall share some of the tactics we have taken to achieve a strictly JSLinted approach to Pure Functional Programming in Javascript with capability security.
+
+After this session, programmers in the room shall know how to write secure Javascript programs that are easy to reason about, secure from XXS attacks, syntactically unambiguous, defensively written and literate as well as what different architectural options are available.
