@@ -1,9 +1,7 @@
 Capability Security and Pure Functional Programming in JSLinted Javascript
 
-Pure functional programming makes code easier to reason about, yet as last year's LambdaConf Keynote On State made clear: we are still struggling with mutable state. At the same time, we must also build systems that cannot be tricked into giving up their secrets or doing things that are against the will of their users.
+Capability-based security and Functional Programming both seek to implement a "minimum necessary interface" sufficient to interact with the outside world. But their individual implementations appear incompatible--capability-based security employs mutable state where functional programming avoids it. Such a conflict is commonplace in production code, where it is often difficult to make extensive use of pure or immutable structures.
 
-Douglas Crockford has brought his Facet Pattern into Javascript to solve the capability security problem, but this also comes with interesting challenges for the serious functional programmer since the Facet Pattern depends on mutable state within a closure. The professional Javascript Programmer cannot be caught without solutions to these problems even as a clear way has not yet been popularly established.
+This workshop will discuss strategies the Javascript programmer can employ to manage areas of mutable state while maintaining secure, syntactically unambiguous code. We will use JSLint Javascript to contrast the Facet Pattern with Redux, which employs the Flux architecture, and demonstrate our strategies for using pure functional programming to implement capability-based security.
 
-For our workshop, since we are using Javascript, the Redux Flux architecture is where we shall begin. We shall proceed to contrast it with the classic Facet Pattern. Finally, we shall share some of the tactics we have taken to achieve a strictly JSLinted approach to Pure Functional Programming in Javascript with capability security.
-
-After this session, programmers in the room shall know how to write secure Javascript programs that are easy to reason about, secure from XXS attacks, syntactically unambiguous, defensively written and literate as well as what different architectural options are available.
+At the end of this session, programmers will understand the behavior of mutable state within a Javascript closure and know strategies for writing secure programs in Javascript that are literate, easy to reason about, and consistent with the principles of Pure Functional Programming.
